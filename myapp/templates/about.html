@@ -1,0 +1,67 @@
+<!-- myapp/templates/index.about -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<title>Homepage</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>This is the hidden testing page.</h1>
+			<br>
+			<p>Number of the rows in the table: {{ num_row }} 
+			{% for person in person_list %} {{ person.name }} {% endfor %}</p>
+			<h1>Example DB</h1>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>st_no</th>
+						<th>name</th>
+						<th>age</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for example in example_list %}
+					<tr>
+						<td>{{ example.st_no }}</td>
+						<td>{{ example.name }}</td>
+						<td>{{ example.age }}</td>
+						<td>
+							<a  href="{% url 'example_view' example.id %}" class="btn btn-dark">view</a>
+							<a  href="{% url 'example_edit' example.id %}" class="btn btn-info">edit</a>
+							<a  href="{% url 'example_delete' example.id %}" class="btn btn-danger">delete</a>
+						</td>
+					</tr>
+
+					{% endfor %}
+					<a  href="{% url 'example_create' %}" class="btn btn
+					-default">NEW</a>
+				</tbody>
+			</table>
+			<br>
+			<h2>MYSQL TESTS</h2>
+			<ul>
+				<li>SQL Injection</li>
+				<li>Unencrypted Data</li>
+				<li>Unpatched DB</li>
+				<li>(privilege escalation)</li>
+			</ul>
+			<br>
+			<h2>MongoDB TESTS</h2>
+			<ul>
+				<li>Query Selector Injection</li>
+				<li>Insecure(default) Congiguration</li>
+				<li>Externally accessable DB</li>
+				<ul>
+
+
+					<br>
+
+
+					<a href="{% url 'index' %}">Homepage</a>
+		</div>
+	</body>
+</html>
