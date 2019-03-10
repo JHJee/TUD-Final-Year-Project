@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson Plan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+            .nav-link {
+              color: white;
+            }
+            .card {
+                margin: 0 auto; /* Added */
+                /* float: none; */
+        }
+        .card-text{
+            color: grey;
+        }
+        .card-body:hover{
+            background-color: #f2f2f2;
+        }
+          </style>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Lesson Plan</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mx-auto">
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">A. What is RDBMS? </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text"><br>Quick overview of Relational Databases. <br>Definition, SQL, etc<br></p>
+                        <a href="{% url 'lesson-a' %}}" class="card-link">Lesson A ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">B. What is NoSQL Databases?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text"><br>Quick overview of NoSQL Databases.
+                            Definition, Querying, comparisons with RDBMS, and more.<br></p>
+                        <a href="#" class="card-link">Lesson B ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">C. SQL DB Security Vulnerabilities</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Examples of possible attacks against SQL DBs and demonstrations with a MySQL server.</p>
+                        <a href="{% url 'lesson-c' %}}" class="card-link">Lesson C ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row mx-auto">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">D. Preventing SQL DB Attacks</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">You are going to learn how to block the SQL DB attacks mentioned in the previous lesson.</p>
+                            <a href="#" class="card-link">Lesson D ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">E. NoSQL DB Security Vulnerabilities</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">Examples of possible attacks against NoSQL DBs and demonstrations with a MongoDB server</p>
+                            <a href="#" class="card-link">Lesson E ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">F. Preventing NoSQL DB Attacks</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">You are going to learn how to block the NoSQL DB attacks mentioned in the previous lesson.</p>
+                            <a href="#" class="card-link">Lesson F ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
