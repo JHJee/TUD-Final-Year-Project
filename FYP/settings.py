@@ -85,6 +85,7 @@ DATABASES = {
             },
         'mongo': {
             'ENGINE': 'djongo',
+            'ENFORCE_SCHEMA': True,
             'NAME': 'FYP_MONGO',
             'USER': 'mongoUser',
             'PASSWORD': 'mongo0m',

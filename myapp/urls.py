@@ -1,6 +1,7 @@
 # myapp/urls.py
 from django.urls import path, re_path
 from . import views
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -9,9 +10,11 @@ urlpatterns = [
     path('view/ <int:pk>', views.ExampleView.as_view(), name='example_view'),
     path('edit/<int:pk>', views.ExampleUpdate.as_view(), name='example_edit'),
     path('delete/<int:pk>', views.ExampleDelete.as_view(), name='example_delete'),
-    path('main/', views.Main.as_view(), name='main'),
-    path('main/rdbms/', views.RDBMS.as_view(), name='rdbms'),
-    path('main/rdbms/sql-injection', views.SQLInjection.as_view(), name='sql-injection'),
-    path('main/rdbms/privilege-abuse', views.PrivilegeAbuse.as_view(), name='privilege-abuse'),
-    path('main/rdbms/unencrypted-data', views.Unencrypted.as_view(), name='unencrypted'),
+    path('overview/', views.Overview.as_view(), name='overview'),
+    path('overview/lesson-plan/', views.LessonPlan.as_view(), name='lesson-plan'),
+    path('overview/lesson-plan/lesson-A', views.LessonA.as_view(), name='lesson-a'),
+    path('overview/lesson-plan/lesson-B', views.LessonB.as_view(), name='lesson-b'),
+    path('overview/lesson-plan/lesson-C', views.LessonC.as_view(), name='lesson-c'),
+    path('demo/', views.Form1View.as_view(), name='demo'),
+    path('demo2/', views.Form2View.as_view(), name='demo2'),
 ]

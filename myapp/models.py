@@ -8,7 +8,7 @@ class Example(models.Model):
     age = models.IntegerField()
 
     def __str__(self):
-        return self.name
+        return str(self.id)
 
     def get_absolute_url(self):
         return reverse('example_edit', kwargs={'pk': self.pk})

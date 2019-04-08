@@ -1,0 +1,13 @@
+{% extends "about.html" %}
+
+{% block content %}
+<div class='col-6 offset-md-3'>
+	<h1>1st Form</h1>
+	<form id='form1' name='form1' method='POST' action='.' data-url='{{ request.build_absolute_url }}' >
+		{% csrf_token %}
+		<div id='form1-text'> {{ form.as_p }} </div>
+		<button type='submit' class='btn btn-primary'>Submit</button>
+		<div id='result'></div>
+	</form>
+</div>
+{% endblock %}

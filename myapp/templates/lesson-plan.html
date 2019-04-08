@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson Plan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .nav-link {
+        	color: white;
+            }
+        .card {
+         	margin: 0 auto; /* Added */
+              /* float: none; */
+        }
+        .card-text{
+        	color: grey;
+        }
+        .card-body:hover{
+        	background-color: #f2f2f2;
+        }
+	.jumbotron{
+		background-image: url(https://image.freepik.com/free-vector/abstract-background-green-color_23-2147866460.jpg);
+		background-size: cover;
+		color: white;
+	}
+          </style>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Lesson Plan</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mx-auto">
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">A. What is RDBMS? </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Quick overview of Relational Databases. <br>Definition, SQL, etc<br></p>
+                        <a href="{% url 'lesson-a' %}" class="card-link">Lesson A ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">B. What is NoSQL Databases?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Quick overview of NoSQL Databases.
+                            Definition, Querying, comparisons with RDBMS, and more.<br></p>
+			<a href="{% url 'lesson-b' %}" class="card-link">Lesson B ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">C. SQL Injection</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Try implementing SQL injection attacks against a MySQL database and learn how to prevent them.</p>
+                        <a href="{% url 'demo2' %}" class="card-link">Lesson C ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row mx-auto">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">D. NoSQL Injection</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">Try implementing NoSQL injection attacks against a MongoDB database and learn how to prevent them.</p>
+                            <a href="#" class="card-link">Lesson D ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">E. XSS(Cross-Site Scripting) attack</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">Learn how XSS attacks work and how to avoid them.</p>
+                            <a href="#" class="card-link">Lesson E ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">F. URL Manipulation</h5>
+                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                            <p class="card-text">Learn how URL manipulations work and how to avoid them.</p>
+                            <a href="#" class="card-link">Lesson F ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><div align="center"><a class="btn btn-primary text-center" href="{% url 'overview' %}">Home</a></div>
+</body>
+</html>

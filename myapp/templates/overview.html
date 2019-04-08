@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<title>Overview</title>
+	<style> 
+	.no-list-type { list-style-type: none; }
+	.bgimg {
+		background-image: url(https://image.freepik.com/free-vector/abstract-background-green-color_23-2147866460.jpg);
+		background-size: cover;
+	}
+	.white { color: white; }
+	.transparent {
+		/* opacity: 0.5;
+		filter: alpha(opacity=50); */
+		background-color: rgba(255,255,255,.6);
+	}
+	</style>
+</head>
+<body class="bgimg">
+	<div class="container" style="background-color: none">
+		<div class="row">
+			<p class="white display-5" style="margin: 1px 1pc 1px 1px; border: 1px solid white">Yours Securely,</p>
+		</div> <!-- end logo row -->
+
+		<div class="row">
+			<div class="col-sm-8" style="text-align: center; margin: auto;">
+				<img src="https://s3.amazonaws.com/one-month-rails-production/courses/icons/000/000/011/original/One-Month-Icon_Web-Security.png?1421435023" style="max-width: 25%; max-height: 25%;"></img>
+				<h1 class="display-3" style="color: white">Protect Your Website</h1>
+				<p class="white lead"><mark>Yours Securely</mark> provides many lessons and tutorials on web security.<br>Take a look at the lesson plan and learn the basics of databases and web security.</p>
+				<!-- style="font-size: x-large" -->
+			</div> <!-- end col1 -->
+			<div class="col-sm-4 transparent" style="margin: auto;">
+				<div class="containe">
+					<h1 style="color: royalblue"><b>Objectives</b></h1>
+					<hr>
+					<ul>
+						<li><h5>Understanding of:</h5>
+							<ul class="no-list-type">
+								<li><b>A</b> - Relational Databases</li>
+								<li><b>B</b> - NoSQL Databases</li>
+							</ul>
+						</li>
+						<br>
+						<li><h5>Database Attacks</h5>
+							<ul class="no-list-type">
+								<li><b>C</b> - SQL Injection</li>
+								<li><b>D</b> - NoSQL Injection</li>
+							</ul>
+						</li>
+						<br>
+						<li><h5>Front-end Side Attacks</h5>
+							<ul class="no-list-type">
+								<li><b>E</b> - XSS(Cross-Site Scripting) Attack</li>
+						                <li><b>F</b> - URL Manipulation</li>
+							</ul>
+						</li>
+					</ul> <!-- end list -->
+					<div style="text-align: center"><a href="{% url 'lesson-plan' %}" class="btn btn-primary" style="margin: auto">LESSON PLAN</a></div>
+				</div> <!-- end list container -->
+				<br>
+			</div> <!-- end col1 (box) -->
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</body>
+
+</html>

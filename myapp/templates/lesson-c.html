@@ -13,16 +13,14 @@
 			<h1 style="color:royalblue">Lesson C</h1>
 		</div>
 		<br>
-
-		<div class="container-fluid">
+		<div class="container-fluid"></div>
 		<div class="row justify-content-center">
-			<p>
-			';insert into example (st_no,name,age) values ("1","2",3);select * from example where name like '
-			</p>
+
+		</div>
+
+		<br><div class="row justify-content-center">
 			{% block content %}
 			{% endblock content %}
-		</div>
-		<br><div class="row justify-content-center">
 			<nav aria-label="Page navigation example">
 				<ul class="pagination">
 					<li class="page-item"><a class="page-link" href="{% url 'lesson-b' %}">< previous</a></li>
@@ -30,7 +28,7 @@
 					<li class="page-item"><a class="page-link" href="#">Next ></a></li>
 				</ul>
 			</nav></div>
-		</div>
+			</div>
 
 			<script>
 				$(document).ready(function(){
@@ -100,5 +98,8 @@
 					}
 				})
 			</script>
+
+			<a href="{% url 'index' %}">Homepage</a>
+			</div>
 	</body>
 </html>
